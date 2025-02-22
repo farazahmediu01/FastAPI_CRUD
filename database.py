@@ -18,19 +18,3 @@ def get_session():
 
 
 session_dependency = Annotated[Session, Depends(get_session)]
-
-
-# from typing import AsyncGenerator
-# from sqlalchemy.ext.asyncio import AsyncSession
-# from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession
-
-# async def get_async_session() -> AsyncSession:
-#     async with async_session() as session:
-#         yield session
-
-# # async_session_dependency = Annotated[AsyncSession, Depends(get_async_session)]
-
-
-# async def async_init_db():
-#     async with engine.begin() as conn:
-#         await conn.run_sync(SQLModel.metadata.create_all)
