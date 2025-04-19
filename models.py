@@ -4,7 +4,7 @@ from datetime import date
 
 class Book(SQLModel, table=True):
     id: int = Field(default=None, primary_key=True)
-    title: str = Field(sa_column=Column(String, unique=True, nullable=False))
+    title: str = Field(unique=True)
     publisher: str
     publication_date: date
     page_count: int
