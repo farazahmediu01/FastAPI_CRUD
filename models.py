@@ -1,4 +1,4 @@
-from sqlmodel import Field, SQLModel, Column, String
+from sqlmodel import Field, SQLModel
 from datetime import date
 
 
